@@ -1,0 +1,7 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow: /privacy/
+Allow: /
+
+# Sitemap location
+Sitemap: https://growindatascience.com/sitemap.xml

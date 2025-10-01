@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow in Data Science – Free Tools & Roadmaps | GrowinDataScience.com</title>
+    <meta name="description" content="Discover your personalized learning path in data science with our free roadmap generator. Get customized learning paths based on your skill level and interests.">
+    <meta property="og:title" content="Grow in Data Science – Free Tools & Roadmaps">
+    <meta property="og:description" content="Generate your personalized data science learning roadmap. Free tools and resources to help you grow your data science career.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://growindatascience.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="datascience_logo.png" alt="Grow in Data Science Logo" class="logo-image">
+                    <span class="logo-text">Grow in Data Science</span>
+                </div>
+                
+                <div class="header-right">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link" data-testid="link-home">Home</a>
+                        <a href="#roadmap" class="nav-link" data-testid="link-tools">Tools</a>
+                        <a href="blog.html" class="nav-link" data-testid="link-blog">Blog</a>
+                        <a href="about.html" class="nav-link" data-testid="link-about">About us</a>
+                    </nav>
+
+                    <button class="theme-toggle" id="themeToggle" data-testid="button-theme-toggle">
+                    <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Grow in <span class="hero-title-highlight">Data Science</span><br>
+                        Roadmaps Generator Free Tools 
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Discover your personalized learning path in data science. Get customized roadmaps 
+                        based on your current skill level and career goals.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="generateRoadmapBtn" data-testid="button-generate-roadmap">
+                            Generate My Roadmap
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12,5 19,12 12,19"></polyline>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline" data-testid="button-learn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon feature-icon-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Personalized Paths</h3>
+                        <p class="feature-description">Tailored learning journeys based on your experience</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon feature-icon-success">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Career Growth</h3>
+                        <p class="feature-description">Focus on skills that matter for your career goals</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon feature-icon-warning">
+                            <span class="feature-percentage">100%</span>
+                        </div>
+                        <h3 class="feature-title">Completely Free</h3>
+                        <p class="feature-description">No hidden costs, just quality learning resources</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Generator Section -->
+        <section id="roadmap" class="roadmap-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Data Science Roadmap Generator</h2>
+                    <p class="section-subtitle">Get a personalized learning path tailored to your current skills and goals</p>
+                </div>
+
+                <div class="roadmap-generator">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Build Your Custom Roadmap</h3>
+                            <p class="card-description">Tell us about your current level and interests</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label class="form-label">Current Skill Level</label>
+                                <select id="skillLevel" class="form-select" data-testid="select-skill-level">
+                                    <option value="">Select your skill level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Areas of Interest (select all that apply)</label>
+                                <div class="checkbox-grid">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="python" value="Python" data-testid="checkbox-python">
+                                        <label for="python">Python</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="sql" value="SQL" data-testid="checkbox-sql">
+                                        <label for="sql">SQL</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="statistics" value="Statistics" data-testid="checkbox-statistics">
+                                        <label for="statistics">Statistics</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="ml" value="Machine Learning" data-testid="checkbox-machine-learning">
+                                        <label for="ml">Machine Learning</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="dl" value="Deep Learning" data-testid="checkbox-deep-learning">
+                                        <label for="dl">Deep Learning</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="viz" value="Data Visualization" data-testid="checkbox-data-visualization">
+                                        <label for="viz">Data Visualization</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-full" id="generateBtn" data-testid="button-generate">
+                                Generate My Roadmap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="roadmapResults" class="roadmap-results hidden">
+                    <div class="roadmap-header">
+                        <h3 class="roadmap-title">Your Personalized Roadmap</h3>
+                        <p class="roadmap-subtitle">Follow these steps to advance your data science skills</p>
+                    </div>
+                    
+                    <div id="roadmapSteps" class="roadmap-steps"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affiliate CTA Section -->
+        <section class="affiliate-section">
+            <div class="container">
+                <div class="affiliate-content">
+                    <h2 class="section-title">Ready to Learn Faster?</h2>
+                    <p class="section-subtitle">Join top-rated Data Science Bootcamps and accelerate your career with expert guidance</p>
+
+                    <div class="affiliate-card">
+                        <div class="affiliate-features">
+                            <div class="affiliate-feature">
+                                <div class="feature-icon feature-icon-primary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <span class="affiliate-feature-title">Expert Mentors</span>
+                                <span class="affiliate-feature-desc">1-on-1 guidance</span>
+                            </div>
+                            
+                            <div class="affiliate-feature">
+                                <div class="feature-icon feature-icon-success">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                </div>
+                                <span class="affiliate-feature-title">Real Projects</span>
+                                <span class="affiliate-feature-desc">Portfolio ready</span>
+                            </div>
+                            
+                            <div class="affiliate-feature">
+                                <div class="feature-icon feature-icon-warning">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                                    </svg>
+                                </div>
+                                <span class="affiliate-feature-title">Job Guarantee</span>
+                                <span class="affiliate-feature-desc">Career support</span>
+                            </div>
+                        </div>
+
+                        <div class="affiliate-offer">
+                            <div class="offer-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"></polygon>
+                                </svg>
+                                <span>Limited Time Offer</span>
+                            </div>
+                            <p class="offer-text">
+                                Save <strong>90%</strong> on premium bootcamp courses. 
+                                Only <strong>48 hours</strong> left!
+                            </p>
+                        </div>
+
+                        <button class="btn btn-danger btn-large" data-testid="button-affiliate-cta">
+                            Get Course at 90% Off
+                        </button>
+                        
+                        <p class="affiliate-disclaimer">
+                            * Affiliate link - we may earn a commission at no extra cost to you
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About This Tool</h2>
+                    <p class="section-subtitle">Our Data Science Roadmap Generator uses industry insights and career data to create personalized learning paths that actually work</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-how">
+                        <h3 class="about-subtitle">How It Works</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Skill Assessment</h4>
+                                    <p class="step-description">Tell us your current level and areas of interest. Our algorithm analyzes your background to understand where you are in your data science journey.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Smart Recommendation</h4>
+                                    <p class="step-description">Based on thousands of successful data science career paths, we generate a customized roadmap with prioritized skills and realistic timelines.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Actionable Steps</h4>
+                                    <p class="step-description">Get a clear, step-by-step plan with estimated timeframes, priority levels, and specific skills to focus on at each stage of your learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-why">
+                        <h3 class="about-subtitle">Why Use Our Generator?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <h4 class="benefit-title">Focused Learning</h4>
+                                <p class="benefit-description">Avoid information overload with prioritized skills</p>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                                <h4 class="benefit-title">Data-Driven</h4>
+                                <p class="benefit-description">Based on real industry hiring trends</p>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="benefit-title">Community Tested</h4>
+                                <p class="benefit-description">Validated by thousands of learners</p>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path>
+                                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="benefit-title">Adaptive</h4>
+                                <p class="benefit-description">Adjusts to your learning pace and goals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-showcase">
+                    <h3 class="skills-title">Key Skills We Cover</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16,18 22,12 16,6"></polyline>
+                                    <polyline points="8,6 2,12 8,18"></polyline>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-desc">Programming & Libraries</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-desc">Database Querying</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Statistics</span>
+                            <span class="skill-desc">Mathematical Foundation</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path>
+                                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Machine Learning</span>
+                            <span class="skill-desc">Algorithms & Models</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Deep Learning</span>
+                            <span class="skill-desc">Neural Networks</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Visualization</span>
+                            <span class="skill-desc">Data Storytelling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about learning data science</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item" data-testid="faq-item-0">
+                        <div class="faq-question">
+                            <span>How long does it take to learn Data Science?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The timeline varies significantly based on your background and learning intensity. For beginners starting from scratch, expect 6-12 months of dedicated study to become job-ready. If you already have programming experience, you might complete a comprehensive program in 3-6 months. Our roadmap generator provides realistic timelines based on your current skill level.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-1">
+                        <div class="faq-question">
+                            <span>Do I need math for Data Science?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, but you don't need to be a mathematician. You'll need statistics (descriptive stats, probability, hypothesis testing), linear algebra (vectors, matrices), and basic calculus (derivatives, optimization). Many successful data scientists learn math concepts as needed for their projects. Start with statistics and build from there.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-2">
+                        <div class="faq-question">
+                            <span>Which programming language is best for Data Science?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Python is the most popular choice due to its extensive libraries (pandas, scikit-learn, TensorFlow), readability, and strong community. R is excellent for statistics and research. SQL is essential for database work. We recommend starting with Python as it covers most data science tasks and has the gentlest learning curve.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-3">
+                        <div class="faq-question">
+                            <span>Can I learn Data Science without a computer science degree?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Many successful data scientists come from diverse backgrounds including physics, economics, biology, and even liberal arts. What matters most is your analytical thinking, curiosity, and willingness to learn. Focus on building practical skills through projects and demonstrating your abilities through a strong portfolio.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-4">
+                        <div class="faq-question">
+                            <span>What's the difference between Data Science and Data Analytics?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Data Analytics focuses on examining historical data to answer specific business questions using descriptive and diagnostic analysis. Data Science is broader, encompassing analytics but also including predictive modeling, machine learning, and creating data products. Data scientists often build models to predict future outcomes, while analysts typically focus on understanding past performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-5">
+                        <div class="faq-question">
+                            <span>How much can I expect to earn as a Data Scientist?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Salaries vary by location, experience, and industry. In the US, entry-level positions typically start at $70-90k, mid-level at $100-130k, and senior roles can exceed $150-200k. Tech companies and finance typically pay more. Location matters significantly - salaries in San Francisco and New York are higher but so is cost of living. Focus on building skills first, compensation will follow.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-6">
+                        <div class="faq-question">
+                            <span>Should I get a Master's degree or certification?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>It depends on your goals and background. A Master's can provide structured learning and networking opportunities, but it's not required for most positions. Many employers value practical experience and portfolio projects over formal education. Certifications can be helpful for specific tools but aren't typically hiring requirements. Focus on building demonstrable skills through projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-7">
+                        <div class="faq-question">
+                            <span>What types of projects should I include in my portfolio?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Include 3-5 diverse projects that showcase different skills: data cleaning and exploration, statistical analysis, machine learning modeling, and data visualization. Use real datasets, not toy examples. Include at least one end-to-end project showing the complete data science pipeline. Make sure your code is clean, well-documented, and your results are clearly communicated.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="datascience_logo.png" alt="GrowinDataScience Logo" class="logo-image">
+                        <span class="logo-text">GrowinDataScience</span>
+                    </div>
+                    <p class="footer-description">Empowering the next generation of data scientists with personalized learning paths and free tools.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-testid="link-twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" data-testid="link-linkedin">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" data-testid="link-github">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-simple-links">
+                        <a href="about.html" class="footer-link" data-testid="link-about">About</a>
+                        <span class="footer-separator">|</span>
+                        <a href="privacy.html" class="footer-link" data-testid="link-privacy">Privacy Policy</a>
+                        <span class="footer-separator">|</span>
+                        <a href="disclaimer.html" class="footer-link" data-testid="link-disclaimer">Disclaimer</a>
+                        <span class="footer-separator">|</span>
+                        <a href="contact.html" class="footer-link" data-testid="link-contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 GrowinDataScience.com. All rights reserved. Built with 💙 for aspiring data scientists.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
